@@ -43,7 +43,7 @@ export const MainApp = () => {
   const handleSubmit = ev => {
     ev.preventDefault();
     dispatch(savePreparedData(name));
-    alert(`selected name: ${state.preparedData} is stored`);
+    alert(`selected name: ${name} is stored`);
   }
   const selectFields = [];
   state.names.forEach(elem => {
