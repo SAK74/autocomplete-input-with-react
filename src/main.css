@@ -1,0 +1,17 @@
+.main-container {
+    width: 200px;
+    display: inline-block;
+  }
+  .fields-container {
+    position: absolute;
+  }
+  .active-item {
+    background-color: lightskyblue;
+    font-size: large;
+  }
+  .all-items:hover {
+    background-color: lightsteelblue !important;
+  }
+  .all-items, .active-item, [type=submit] {
+    cursor: pointer;
+  }
