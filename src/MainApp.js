@@ -23,7 +23,8 @@ export const MainApp = () => {
 
   let focusCount = -1;
   const handleKeyDown = ev => {
-    const arr = refActive.current.getElementsByTagName('DIV');
+    const arr = refActive.current.children;
+    if (!arr.length) return;
     function setActive(){
       for (let i = 0; i < arr.length; i++) arr[i].className = "all-items";
       arr[focusCount].className = "active-item";
@@ -42,6 +43,7 @@ export const MainApp = () => {
 
   const handleSubmit = ev => {
     ev.preventDefault();
+    if (!name) return;
     dispatch(savePreparedData(name));
     alert(`selected name: ${name} is stored`);
   }

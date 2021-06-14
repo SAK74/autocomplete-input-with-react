@@ -5,7 +5,7 @@
   .fields-container {
     position: absolute;
   }
-  .active-item {
+  .active-item, .all-items:hover {
     background-color: lightskyblue;
     font-size: large;
   }
